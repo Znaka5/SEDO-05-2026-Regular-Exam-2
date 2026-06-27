@@ -1,7 +1,8 @@
 pipeline {
     agent any
+
     stages {
-        stage('Dotnet restore') {
+        stage('Dotnet Restore') {
             when {
                 branch 'main'
             }
@@ -10,7 +11,7 @@ pipeline {
             }
         }
 
-        stage('Dotnet build') {
+        stage('Dotnet Build') {
             when {
                 branch 'main'
             }
@@ -19,7 +20,7 @@ pipeline {
             }
         }
 
-        stage('Dotnet test') {
+        stage('Dotnet Test') {
             when {
                 branch 'main'
             }
